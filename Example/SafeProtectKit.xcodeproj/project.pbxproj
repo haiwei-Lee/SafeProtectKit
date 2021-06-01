@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2F256C1D1D2E933AB210F4AF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		2F256C1D1D2E933AB210F4AF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		3A12F548E96576309BF6FA1E /* Pods-SafeProtectKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SafeProtectKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SafeProtectKit_Tests/Pods-SafeProtectKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -28,9 +28,9 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		CFAF7E753BFD5DB93E5EDFC1 /* Pods_SafeProtectKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SafeProtectKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D3E8AF026380604B07B2B6C0 /* SafeProtectKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SafeProtectKit.podspec; path = ../SafeProtectKit.podspec; sourceTree = "<group>"; };
+		D3E8AF026380604B07B2B6C0 /* SafeProtectKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SafeProtectKit.podspec; path = ../SafeProtectKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E8B28087D0E60469F67A6967 /* Pods-SafeProtectKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SafeProtectKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-SafeProtectKit_Tests/Pods-SafeProtectKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		FAAF0137F01530E39F67F229 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		FAAF0137F01530E39F67F229 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,7 +114,6 @@
 				3A12F548E96576309BF6FA1E /* Pods-SafeProtectKit_Tests.debug.xcconfig */,
 				E8B28087D0E60469F67A6967 /* Pods-SafeProtectKit_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -160,6 +159,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);

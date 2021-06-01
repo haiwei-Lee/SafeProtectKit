@@ -1,0 +1,22 @@
+{
+  "name": "SafeProtectKit",
+  "version": "0.1.0",
+  "summary": "A short description of SafeProtectKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/haiwei.li@foxmail.com/SafeProtectKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "haiwei.li@foxmail.com": "haiwei.li@foxmail.com"
+  },
+  "source": {
+    "git": "https://github.com/haiwei.li@foxmail.com/SafeProtectKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "SafeProtectKit/Classes/**/*"
+}

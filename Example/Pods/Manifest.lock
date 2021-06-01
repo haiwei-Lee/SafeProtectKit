@@ -1,0 +1,16 @@
+PODS:
+  - SafeProtectKit (0.1.0)
+
+DEPENDENCIES:
+  - SafeProtectKit (from `../`)
+
+EXTERNAL SOURCES:
+  SafeProtectKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SafeProtectKit: 7428917175aaf331a2403f28030efae1360b371a
+
+PODFILE CHECKSUM: f9fa23f1f7b1a3831eb36fbb9a50adc6608d7e9c
+
+COCOAPODS: 1.10.1
