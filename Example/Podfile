@@ -1,0 +1,6 @@
+use_frameworks!
+target 'SafeProtectKit_Tests' do
+  pod 'SafeProtectKit', :path => '../'
+  
+  
+end
