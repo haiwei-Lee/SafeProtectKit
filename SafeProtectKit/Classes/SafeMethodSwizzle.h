@@ -16,12 +16,12 @@ static inline BOOL SafeSwizzleClassMethod(Class cls, SEL origSelector, SEL newSe
     
     Class metacls = objc_getMetaClass(NSStringFromClass(cls).UTF8String);
     
-//    BOOL
+    BOOL didAddMethod = class_addMethod(metacls,
+                                        origSelector,
+                                        method_getImplementation(swizzledMethod),
+                                        method_getTypeEncoding(swizzledMethod));
     
-    if (class_addMethod(metacls,
-                        origSelector,
-                        method_getImplementation(swizzledMethod),
-                        method_getTypeEncoding(swizzledMethod)) ) {
+    if (didAddMethod) {
         /* swizzing super class method, added if not exist */
         class_replaceMethod(metacls,
                             newSelector,
@@ -30,13 +30,35 @@ static inline BOOL SafeSwizzleClassMethod(Class cls, SEL origSelector, SEL newSe
         
     } else {
         /* swizzleMethod maybe belong to super */
-        class_replaceMethod(metacls,
+        method_exchangeImplementations(originalMethod, swizzledMethod);
+    }
+    
+    return YES;
+}
+
+static inline BOOL SafeSwizzleInstanceMethod(Class cls, SEL origSelector, SEL newSelector){
+    if (!cls) return NO;
+    /* if current class not exist selector, then get super*/
+    Method originalMethod = class_getInstanceMethod(cls, origSelector);
+    Method swizzledMethod = class_getInstanceMethod(cls, newSelector);
+    
+    BOOL didAddMethod = class_addMethod(cls,
+                                        origSelector,
+                                        method_getImplementation(swizzledMethod),
+                                        method_getTypeEncoding(swizzledMethod));
+    
+    /* add selector if not exist, implement append with method */
+    if (didAddMethod) {
+        /* replace class instance method, added if selector not exist */
+        /* for class cluster , it always add new selector here */
+        class_replaceMethod(cls,
                             newSelector,
-                            class_replaceMethod(metacls,
-                                                origSelector,
-                                                method_getImplementation(swizzledMethod),
-                                                method_getTypeEncoding(swizzledMethod)),
+                            method_getImplementation(originalMethod),
                             method_getTypeEncoding(originalMethod));
+        
+    } else {
+        /* swizzleMethod maybe belong to super */
+        method_exchangeImplementations(originalMethod, swizzledMethod);
     }
     
     return YES;

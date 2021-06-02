@@ -38,6 +38,7 @@
 		69E355150240D9897C3B45127BE703EF /* SafeProtectKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SafeProtectKit-prefix.pch"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7B12AA393D8A2D2BE1BDF1E5CE180580 /* SafeProtectKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SafeProtectKit-dummy.m"; sourceTree = "<group>"; };
+		8054466226672294008F64E1 /* SafeDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SafeDefines.h; path = SafeProtectKit/Classes/SafeDefines.h; sourceTree = "<group>"; };
 		80E543C5266659D9001627C9 /* NSArray+SafeProtectKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSArray+SafeProtectKit.h"; path = "SafeProtectKit/Classes/NSArray+SafeProtectKit.h"; sourceTree = "<group>"; };
 		80E543C6266659D9001627C9 /* NSArray+SafeProtectKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSArray+SafeProtectKit.m"; path = "SafeProtectKit/Classes/NSArray+SafeProtectKit.m"; sourceTree = "<group>"; };
 		80E543C926665B2F001627C9 /* SafeMethodSwizzle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SafeMethodSwizzle.h; path = SafeProtectKit/Classes/SafeMethodSwizzle.h; sourceTree = "<group>"; };
@@ -144,6 +145,7 @@
 				80E543C5266659D9001627C9 /* NSArray+SafeProtectKit.h */,
 				80E543C6266659D9001627C9 /* NSArray+SafeProtectKit.m */,
 				80E543C926665B2F001627C9 /* SafeMethodSwizzle.h */,
+				8054466226672294008F64E1 /* SafeDefines.h */,
 			);
 			name = SafeProtectKit;
 			path = ../..;
